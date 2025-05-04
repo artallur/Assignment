@@ -1,0 +1,37 @@
+@FlightQualityAnalyzerAPI_HostAddress = https://localhost:7253
+
+GET {{FlightQualityAnalyzerAPI_HostAddress}}/api/flights
+Accept: application/json
+
+###
+
+GET {{FlightQualityAnalyzerAPI_HostAddress}}/api/analysis
+Accept: application/json
+
+###
+
+GET {{FlightQualityAnalyzerAPI_HostAddress}}/api/analysis/checkairportsequence
+Accept: application/json
+
+###
+
+GET {{FlightQualityAnalyzerAPI_HostAddress}}/api/analysis/checkduplicateflights
+Accept: application/json
+
+###
+
+GET {{FlightQualityAnalyzerAPI_HostAddress}}/api/analysis/checkaircraftoverlaps
+Accept: application/json
+
+###
+
+GET {{FlightQualityAnalyzerAPI_HostAddress}}/api/analysis/checkroutelogic
+Accept: application/json
+
+###
+
+GET {{FlightQualityAnalyzerAPI_HostAddress}}/api/analysis/checktimelogic
+Accept: application/json
+
+###
+
