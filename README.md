@@ -2,7 +2,7 @@ This assignment provides RestAPI that reads flight data from a flights.csv file 
 makes different checks, provides the result as a list of inconsistency strings.
 
 This Assignment contains two directories. One directory contains ASP.NET Core WebAPI project "FlightQualityAnalyzerAPI" and another directory contains xUnit C# project "FlightQualityAnalyzerTests".
-The solution file is included in FlightQualityAnalyzerAPI which has reference to FlightQualityAnalyzerAPI and FlightQualityAnalyzerTests c# projects.
+The solution file is included in FlightQualityAnalyzerAPI which has reference to FlightQualityAnalyzerAPI and FlightQualityAnalyzerTests c# projects. I have used xUnit for unit testing.
 
 Rest API exposes the below endpoints for testing.
 
