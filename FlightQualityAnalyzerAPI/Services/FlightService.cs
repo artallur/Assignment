@@ -25,30 +25,6 @@ namespace FlightQualityAnalyzerAPI.Services
         }
 
         public List<FlightData> GetAllFlights() => _flightDataList;
-
-        public List<FlightData> GetInconsistentFlightChains()
-        {
-            var inconsistencies = new List<FlightData>();
-            var groupedByAircraft = _flightDataList
-                .GroupBy(f => f.FlightRegistrationNumber);
-
-            foreach (var group in groupedByAircraft)
-            {
-                var ordered = group.OrderBy(f => f.DepartureDateTime).ToList();
-
-                for (int i = 1; i < ordered.Count; i++)
-                {
-                    var previousArrival = ordered[i - 1].ArrivalAirport;
-                    var currentDeparture = ordered[i].DepartureAirport;
-
-                    if (previousArrival != currentDeparture)
-                    {
-                        inconsistencies.Add(ordered[i]);
-                    }
-                }
-            }
-
-            return inconsistencies;
-        }
+        
     }
 }

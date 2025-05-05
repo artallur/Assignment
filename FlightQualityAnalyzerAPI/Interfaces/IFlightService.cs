@@ -5,6 +5,5 @@ namespace FlightQualityAnalyzerAPI.Interfaces
     public interface IFlightService
     {
         List<FlightData> GetAllFlights();
-        List<FlightData> GetInconsistentFlightChains();
     }
 }
